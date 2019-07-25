@@ -1,0 +1,5 @@
+# Quel est le fichier à modifier pour rendre cela permanent ? [Explication]
+/etc/hostname
+
+# Idem previous: first switch to root user with "su root". Then use "vi /etc/hostname" to edit.
+# The hostname is set at the time when the Debian operating system is installed. It's the name given to the machine.

@@ -1,0 +1,6 @@
+# Identifiez l'adresse MAC de la carte Wi-Fi [Commande]
+ifconfig en1 | awk '/ether/{print $2}'
+
+# ifconfig en1 = command used to view/configure the network interface en1, i.e. the Wi-Fi card.
+# awk '/regex pattern/{action}' = finds "ether" in the output, then prints the second field
+# (i.e. space-seperated string) from that line.

@@ -1,0 +1,5 @@
+# Expliquez comment se connecter en tant que ce nouvelle utilisateur.
+# (En session graphique et en session ssh) [Explication]
+
+Graphical : Put your login and password when asked
+SSH : ssh <user>@<ip> then put password when asked

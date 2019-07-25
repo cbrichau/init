@@ -1,0 +1,5 @@
+# Quel est le fichier contenant les entrées locales DNS ? [Explication]
+/etc/hosts
+
+# DNS (Domain Name System/Service) is a system that translates domain names
+# to IP addresses. Locally, such pairings can be created in the "/etc/hosts" file.

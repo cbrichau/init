@@ -1,0 +1,14 @@
+# Identifiez et affichez les caractéristiques de l'interface Ethernet :
+# (a) Indiquez l'adresse de Broadcast [Commande]
+# (b) Indiquez toutes les adresses IP qui font partie du même sous-réseau [Commande]
+ifconfig en0 | awk -F "broadcast " '{printf $2}'
+arp -a
+
+# a)
+# ifconfig en0 = command used to view/configure the network interface en0, i.e. the Ethernet 0.
+# awk -F "seperator" '{action}' = splits the line at the seperator "broadcast "
+# then prints the second field (i.e. space-seperated string) from that line.
+# b)
+# ARP (Address Resolution Protocol) is a protocol that allows a device connected to a network to
+# communicate, with Ethernet, with another device on the same sub-network.
+# arp -a outputs a table pairing IP to MAC adresses of the devices on the subnet (defined by broadcast).

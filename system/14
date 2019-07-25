@@ -1,0 +1,6 @@
+# Lancez en background la commande tail -f /var/log/syslog [Commande]
+tail -f /var/log/syslog &
+
+# Adding "&" at the end of a command line launches it in the background.
+# For the background process to continue even if we close the terminal,
+# use "nohup [command] &".

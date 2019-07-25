@@ -1,0 +1,8 @@
+# Trouvez l'IP qui vous a été assignée par le serveur dhcp [Commande]
+ifconfig en0 | awk '/inet /{print $2}'
+
+# DHCP (= Dynamic Host Configuration Protocol) issues IP addresses in a network.
+# "inet" is the internet address assigned to the interface.
+# ifconfig en0 = command used to view/configure the network interface en0, i.e. Ethernet.
+# awk '/regex pattern/{action}' = finds "inet " in the output, then prints the second field
+# (i.e. space-seperated string) from that line.

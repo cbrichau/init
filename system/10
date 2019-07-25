@@ -1,0 +1,6 @@
+# Quelle commande permet de lister les tables de partitions des disques ? [Commande]
+fdisk -l
+
+# fdisk provides disk partitioning functions.
+# -l flag = list = displays partitions and exits.
+# Alternatively, "lsblk" and "cfdisk" also provide the list of partitions. 

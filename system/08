@@ -1,0 +1,9 @@
+# Quel fichier contient les clés RSA des machines autorisées à se connecter via SSH ? [Explication]
+~/.ssh/authorized_keys
+
+# SSH (= Secure SHell) enables a secure connexion with a system (Unix, Linux, Windows...).
+# Each SSH connexion checks the id of the server (through host key ~/.ssh/known_hosts)
+# and the client (public key ~/.ssh/authorized_keys).
+# RSA (= Rivest, Shamir, and Adelman, the inventors of the technique) is a type of key, along with the other: DSA.
+# https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-debian-9
+# https://doc.fedora-fr.org/wiki/SSH_:_Authentification_par_cl%C3%A9

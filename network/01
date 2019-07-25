@@ -1,0 +1,6 @@
+# Récupérez la liste des interfaces réseau de la machine sans afficher aucun détail
+# pour ces interfaces. Vraiment juste la liste des noms. [Commande]
+ifconfig -l
+
+# ifconfig = InterFace CONFiguration. Command used to view/change the configuration of the network interfaces on our system.
+# -l = flag used to list all available interfaces on the system, with no other additional information (i.e. just their names).

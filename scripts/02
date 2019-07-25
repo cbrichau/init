@@ -1,0 +1,12 @@
+# Réalisez un script qui permet de supprimer un user LOGUÉ sur la machine
+who | awk '{print $1}'
+read -p "Input the username to delete " name
+su $name -c "kill -9 -1"
+userdel $name
+
+# who gives the logged users, awk takes the first field from each line (i.e. the username).
+# read prompts the user to give a username to delete
+# su $name connects us as that usern then -c executes the command "kill -9 -1"
+# 	meaning "kill option SIGKILL (-9) all processes except itself and init (-1), i.e. kill all processes
+# 	(we can't delete a user actively using a process).
+# userdel deletes the user.

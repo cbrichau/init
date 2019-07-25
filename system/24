@@ -1,0 +1,5 @@
+# Quelle commande permet de lister tout les packages INSTALLÉS sur la machine ? [Commande]
+apt list --installed
+
+# APT (= Advanced Package Tool) handles the installation and removal of software.
+# Alternativelly, we can also use "dpkg -l" (older).

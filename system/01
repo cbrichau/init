@@ -1,0 +1,4 @@
+# Dans quel fichier se trouve la version installée de votre Debian ? [Explication]
+/etc/debian_version
+
+# Debian is a Unix-like OS consisting entirely of free software. 

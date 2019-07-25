@@ -1,0 +1,41 @@
+# Listez les services qui se lancent automatiquement lorsque la machine boot
+# et indiquez le nom donné à ce type de service [Sortie de commande]
+alsa-utils
+anacron
+avahi-daemon
+bluetooth
+console-setup.sh
+cron
+dbus
+exim4
+gdm3
+hwclock.sh
+keyboard-setup.sh
+kmod
+minissdpd
+network-manager
+networking
+pppd-dns
+procps
+rsyslog
+saned
+speech-dispatcher
+ssh
+udev
+unattended-upgrades
+x11-common
+----------------
+Type: daemon
+
+# Result of "ls /etc/init.d/" or "service --status-all".
+# ----------
+# 1) /etc/init.d/ = a directory that basically contains start/stop scripts to control (i.e. start,stop,restart,reload)
+#    the machine's daemons during boot or while the system is running.
+# 2) daemon = computer program that runs as a background process (rather than under the direct control of a user).
+# 3) Services that start on boot must have daemons in init.d in folders named after themselves, e.g. "/etc/init.d/mydaemon".
+# 4) The "service" command sort of calls the scripts in "/etc/init.d/".
+#    E.g. "service mydaemon start" == "/etc/init.d/mydaemon start"
+# ----------
+# So ==>
+# - "ls /etc/init.d/" prints a list of daemon names, which include names of services that automatically start on boot.
+# - "service --status-all" gives the status of all scripts in init.d, effectively listing them in the process.

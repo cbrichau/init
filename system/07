@@ -1,0 +1,7 @@
+# Déterminez le PID du service SSHD [Commande]
+cat /var/run/sshd.pid
+
+# The PID is available in /var/run/sshd.pid
+# Alternativelly, we can find it with either of the following:
+#	service ssh status | awk '/Main PID:/{print $3}'
+#	pgrep sshd

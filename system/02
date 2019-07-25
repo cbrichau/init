@@ -1,0 +1,4 @@
+# Quelle commande permet de renommer votre système ? [Commande]
+hostname my-new-name
+
+# This has to be done as root user, so first switch roles using "su root" or "su -".

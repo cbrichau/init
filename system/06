@@ -1,0 +1,22 @@
+# Donnez une commande pour redémarrer le service SSH [Commande]
+service ssh restart
+
+# All SSH commands, depending on the OS version:
+# ---Status---
+# service ssh status
+# /etc/init.d/ssh status
+# systemctl status ssh
+# ---Start---
+# service ssh start
+# /etc/init.d/ssh start
+# systemctl start ssh
+# ---Restart---
+# service ssh restart
+# /etc/init.d/ssh restart
+# systemctl restart ssh
+# ---Stop---
+# service ssh stop
+# /etc/init.d/ssh stop
+# systemctl stop ssh
+# ---All---
+# Some commands must be run as root user. User switch is done with "su root", "su -" or (if installed) "sudo".

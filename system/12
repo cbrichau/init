@@ -1,0 +1,9 @@
+# Déterminez la taille exacte de chaque dossier de /var d'une manière
+# humainement compréhensible suivi du chemin de celui-ci [Commande]
+du -sh /var/*
+
+# du = disk usage = gives information about the usage of a specified disk and folder.
+# /var/* = the path of each folder in /var
+# -s flag = gives the summary (total size) of each folder.
+# -h flag = makes it more humanly readable.
+# Alternatively, "du -h -d 1 /var" or "du -h --max-depth=1 /var" achieve the same result.

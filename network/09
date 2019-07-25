@@ -1,0 +1,16 @@
+# Trouver l'IP Publique de 42.fr [Sortie de commande]
+Server:		10.51.1.1
+Address:	10.51.1.1#53
+
+Non-authoritative answer:
+Name:	42.fr
+Address: 163.172.250.11
+Name:	42.fr
+Address: 163.172.250.12
+Name:	42.fr
+Address: 163.172.250.13
+
+# This is the result for "nslookup 42.fr".
+# nslookup (= name server lookup) is a tool used to query the DNS for its records (domain name, IP, etc.).
+# The first hostname/IP is the one queried.
+# ==> 42.fr's identified public IPs are 163.172.250.11 / 12 / 13

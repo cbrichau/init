@@ -1,0 +1,8 @@
+# Identifiez les différents appareils réseaux entre
+# votre poste et le domaine slash16.org [Commande]
+traceroute slash16.org
+
+# "traceroute" takes a single mandatory argument: the hostname or IP address of the destination.
+# In return it maps the journey that a packet of information takes from its source to that
+# destination. Each hop in the record reflects a new server or router between the originating PC
+# and the intended target.

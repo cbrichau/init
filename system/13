@@ -1,0 +1,8 @@
+# Trouvez une commande qui permet, en temps réel, de trouver
+# les processus en cours d'exécution [Commande]
+top
+
+# Use top or ps to view the active processes.
+# top is like Window's Task Manager: it gives real time data about memory usage, CPU,
+# buffers and active processes.
+# ps gives a static list of active processes. Flags can be used to filter the list.

@@ -1,0 +1,5 @@
+# Quelle commande permet de savoir quelles personnes sont connectées sur le système ? [Commande]
+who
+
+# "who" displays users logged on the system.
+# Aternatively, "w" also shows who is logged + some extra info.

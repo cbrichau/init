@@ -1,0 +1,9 @@
+# Quelle commande permet d'ajouter un utilisateur local supplémentaire ? [Commande]
+adduser the-user-name
+
+# Linux Commands to manage Local Accounts:
+# useradd <options> <username/login> --> create new user
+# userdel <options> <username/login> --> delete user
+# usermod <options> <username/login> --> modify user
+# passwd <username/login> --> assign new password to user
+# chage <options> <username/login> --> modify user password expiry information.

@@ -1,0 +1,16 @@
+# Trouvez grâce au résultat de la commande précédente le nom et l'IP du matériel qui
+# fait le lien entre vous (réseau local) et l'extérieur [Explication]
+traceroute slash16.org
+
+# Running this command outputs the following ==>
+# ---
+# traceroute: Warning: slash16.org has multiple addresses; using 54.230.14.73
+# traceroute to slash16.org (54.230.14.73), 64 hops max, 52 byte packets
+#  1  10.1.254.254 (10.1.254.254)  0.768 ms  0.491 ms  0.499 ms
+#  2  nat (10.60.1.1)  0.202 ms  0.230 ms  0.188 ms
+#  3  105.29-246-81.adsl-static.isp.belgacom.be (81.246.29.105)  0.358 ms  0.490 ms  0.382 ms
+# ---
+# 1 = Our local IP.
+# 2 = NAT = Network Address Translation, a method of remapping an IP address into another.
+# In this case, our private network IP (10.1.254.254) is remapped into a public IP (81.246.29.105) for external communication.
+# 3 = Our public IP.

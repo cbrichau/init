@@ -1,0 +1,9 @@
+# Identifiez la gateway par défaut dans la table de routage [Commande]
+netstat -rn | awk '/default/{print $2;exit}'
+
+# netstat (= network statistics) displays network information (connections, routing tables, interfaces, etc.)
+# -r flag: displays the routing tables.
+# -n flag: displays numerical addresses (instead of names).
+# awk '/default/{print $2;exit}' finds "default" in the output, then prints the second field
+# (i.e. space-seperated string) from that line, then exits so we don't return anything from other lines
+# that may content "default"

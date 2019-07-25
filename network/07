@@ -1,0 +1,7 @@
+# Interrogez un serveur DNS externe sur le nom
+# de domaine slash16.org (ex : google 8.8.8.8) [Commande]
+nslookup slash16.org 8.8.8.8
+
+# nslookup (= name server lookup) is a tool used to query the DNS for its records
+# (domain name, IP, etc.). The first hostname/IP is the one queried, the second is
+# the DNS server to use for the query (optional: default is your primary DNS server).

@@ -1,0 +1,14 @@
+# Faites pointer intra.42.fr sur l’adresse suivante 46.19.122.85 [Explication]
+/etc/hosts
+
+# Edit the file containing local DNS entries (i.e. /etc/hosts)
+# by adding the following IP-hostname pair: "46.19.122.85 intra.42.fr".
+# The result will look like this: "cat /etc/hosts" ==>
+# ---
+# 46.19.122.85		intra.42.fr
+# 10.51.1.6			cdn.42.fr
+# 10.51.1.6			cdn.intra.42.fr
+# 127.0.0.1			localhost
+# 255.255.255.255	broadcasthost
+# ::1				localhost
+# ---

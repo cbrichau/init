@@ -1,0 +1,9 @@
+# Trouvez une commande qui permet de tuer le processus de la commande en background [Commande]
+pkill tail
+
+# pkill = processus kill = kills the given processus.
+# Alternatively:
+# - Use "ps" to get a list of active processes. Find the command (CMD) to kill and its
+#   matching PID, then kill it with "kill the-pid" ==> kill 2062
+# - Use "jobs" to view the processes active in the background, identify its number,
+#   then kill it with "kill %number" ==> kill %1

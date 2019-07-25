@@ -1,0 +1,7 @@
+# Quelle commande donne le temps depuis lequel votre système a été démarré la dernière fois ? [Commande]
+uptime -s
+
+# uptime: gives a one-line display containing "[current time] up [duration system has been running],
+# [number of users currently logged], [system load averages for the past 1, 5, and 15 minutes]".
+# -s flag: displays since when the system is active (~= now - duration) in format YYYY-MM-DD HH:MM:SS.
+# Alternativelly, "who -b" does the same thing with output format "system boot YYYY-MM-DD HH:MM".

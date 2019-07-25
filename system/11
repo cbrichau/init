@@ -1,0 +1,8 @@
+# Quelle commande permet d'afficher l'espace disponible et utilisé
+# sur le système d'une manière humainement compréhensible ? [Commande]
+df -h
+
+# df = disk filesystem = gives a full summary of available and used disk space
+# usage of file system on Linux system.
+# -h flag = makes the output more humanly readable through a bette header
+# & big numbers converted to K(ilo-), G(iga-) or M(egabytes)

@@ -1,0 +1,5 @@
+# Trouvez un service qui permet de lancer des tâches à horaires régulières [Explication]
+cron
+
+# cron ~= chronos = A time-based job scheduler, used to run said jobs
+# at fixed times, dates, or intervals.

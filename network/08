@@ -1,0 +1,14 @@
+# Trouver chez quel hébergeur est le site de Slash16 [Explication]
+whois slash16.org | grep "Name Server"
+
+# whois searches a WHOIS database, which store registered users of an Internet resource
+# (domain name, IP, etc.). It takes the queried domain as parameter.
+# That domain's (D) host is given by NS (Name Server).
+# Typing this command gives us ==>
+# ---
+# Name Server: NS-1236.AWSDNS-26.ORG
+# Name Server: NS-144.AWSDNS-18.COM
+# Name Server: NS-686.AWSDNS-21.NET
+# Name Server: NS-1989.AWSDNS-56.CO.UK
+# ---
+# Where "AWSDNS" is the DNS of Amazon Web Services, i.e. slash16.org's host.

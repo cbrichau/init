@@ -1,0 +1,6 @@
+# Listez tout les utilisateurs existants sur la machine [Commande]
+compgen -u
+
+# compgen = command that lists stuff such as available commads (-c), built-ins (-b), or indeed users (-u).
+# Alternatively, we can look in the file that locally stores the users of the system with
+# "cat /etc/passwd | awk -F ':' '{print $1}'"

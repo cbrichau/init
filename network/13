@@ -1,0 +1,13 @@
+# Grâce a la question précédente et au reverse DNS retrouvez le nom de votre host [Sortie de commande]
+w-r4-p3.s19.be.
+
+# "ifconfig en0 | awk '/inet /{print $2}'" gives us our IP ==> 10.1.4.3
+# We then do an nslookup on that IP ==> "nslookup 10.1.4.3"
+# Which gives us this output ==>
+# ---
+# Server:		10.51.1.1
+# Address:	10.51.1.1#53
+#
+# 3.4.1.10.in-addr.arpa	name = w-r4-p3.s19.be.
+# ---
+# The value after "name =" is the name of our host.

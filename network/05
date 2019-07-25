@@ -1,0 +1,7 @@
+# Identifiez l'IP du serveur DNS qui répond sur le domaine suivant : slash16.org [Commande]
+nslookup slash16.org | awk '/Server/{print $2}'
+
+# nslookup (= name server lookup) is a tool used to query the DNS for its records (domain name, IP, etc.).
+# The first hostname/IP is the one queried.
+# awk '/regex pattern/{action}' = finds "Server" in the output, then prints the second field
+# (i.e. space-seperated string) from that line.

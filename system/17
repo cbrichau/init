@@ -1,0 +1,8 @@
+# Trouvez une commande qui, en parallèle de la session graphique, permet de
+# se connecter en ssh sur la machine [Commande]
+ssh cbrichau@localhost
+
+# To log into a server using SSH, use "ssh username@host".
+# In this case, I'm connecting myself (again) to my localhost.
+# We can also write "cbrichau@127.0.0.1".
+# "w" shows my login once for every connection.

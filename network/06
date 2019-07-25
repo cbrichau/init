@@ -1,0 +1,13 @@
+# Récupérez le path complet du fichier dans lequel est écrit
+# l'adresse IP du serveur DNS que vous utilisez [Explication]
+/var/run/resolv.conf
+
+# The file /etc/resolv.conf contains the DNS address of our server:
+# "cat /etc/resolv.conf" ==>
+# --- 
+# domain s19.be
+# nameserver 10.51.1.1
+# ---
+# But this file is a symlink to /var/run/resolve.conf, as shown by:
+# "ls -l /etc/resolv.conf" ==>
+# lrwxr-xr-x  1 root  wheel  22 Aug  2  2018 /etc/resolv.conf -> ../var/run/resolv.conf
