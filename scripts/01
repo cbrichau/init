@@ -1,10 +1,10 @@
 # Réalisez un script qui affiche seulement le login, le UID et
 # le Path de chaques entrée du fichier /etc/passwd
-cat /etc/passwd | awk -F ":" '{print $1 " " $3 " " $6}'
+cat /etc/passwd | awk -F ":" '{print $1 ":" $3 ":" $7}'
 
 # cat /etc/passwd gives output like:
 # root:x:0:0:root:/root:/bin/bash
-# where root = user, the first 0 = UID (user id), and /root = path of the user directory.
-# So we want the fields 1, 3, and 6 of that line.
+# where root = user, the first 0 = UID (user id), and /bin/bash = path of file /etc/passwd.
+# So we want the fields 1, 3, and 7 of that line.
 # awk -F ":" = split the line on ":".
-# print = the fields 1, 3, 6, seperated by spaces.
+# print = the fields 1, 3, 6, seperated by ":".

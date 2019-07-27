@@ -3,7 +3,6 @@ echo "Input your date of birth:"
 read -p "Day (dd): " d
 read -p "Month (mm): " m
 read -p "Year (yyyy): " y
-
 dow=$(date +'%A' -d $y"-"$m"-"$d)
 echo "You were born on a $dow"
 
